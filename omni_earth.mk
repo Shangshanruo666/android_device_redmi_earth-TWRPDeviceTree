@@ -9,27 +9,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Configure base.mk
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
-
-# Configure core_64_bit_only.mk
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
-
-# Configure virtual_ab compression.mk
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
-
-# Configure emulated_storage.mk
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
-# Configure twrp common.mk
+# Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Configure full_base_telephony.mk
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-
-# Inherit from dodge device
-$(call inherit-product, device/oneplus/infiniti/device.mk)
+# Inherit from earth device
+$(call inherit-product, device/xiaomi/earth/device.mk)
 
 PRODUCT_DEVICE := earth
 PRODUCT_NAME := omni_earth
