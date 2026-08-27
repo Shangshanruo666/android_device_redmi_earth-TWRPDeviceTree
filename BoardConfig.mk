@@ -22,11 +22,6 @@ AB_OTA_PARTITIONS += \
     system
 BOARD_USES_RECOVERY_AS_BOOT := true
 
-COMMON_LUNCH_CHOICES := \
-    omni_earth-eng \
-    omni_earth-userdebug \
-    omni_earth-user
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
