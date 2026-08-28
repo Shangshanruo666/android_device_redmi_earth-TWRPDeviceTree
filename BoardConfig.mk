@@ -167,5 +167,3 @@ BOARD_USES_METADATA_PARTITION := true
 
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
-
--include $(DEVICE_PATH)/OrangeFoxConfig.mk
