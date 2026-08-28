@@ -110,5 +110,6 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
+TW_MAX_BRIGHTNESS := 4095
 
 -include $(DEVICE_PATH)/OrangeFoxConfig.mk
